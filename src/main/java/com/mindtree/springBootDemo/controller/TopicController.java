@@ -17,7 +17,9 @@ public class TopicController {
 
 	@Autowired
 	private TopicServiceImpl topicServiceImpl;
-
+	
+	This line is deliberately writen to create an error in the code
+	
 	@RequestMapping(method = RequestMethod.POST, value = "topics")
 	public void addTopic(@RequestBody Topic topic) {
 		topicServiceImpl.addTopic(topic);
