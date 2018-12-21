@@ -13,7 +13,7 @@ import com.mindtree.springBootDemo.entity.Topic;
 import com.mindtree.springBootDemo.service.serviceImpl.TopicServiceImpl;
 
 @RestController
-public class TopicController {
+public class TopicController {   
 
 	@Autowired
 	private TopicServiceImpl topicServiceImpl;
