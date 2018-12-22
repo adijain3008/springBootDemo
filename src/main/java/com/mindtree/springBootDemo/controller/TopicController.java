@@ -13,13 +13,10 @@ import com.mindtree.springBootDemo.entity.Topic;
 import com.mindtree.springBootDemo.service.serviceImpl.TopicServiceImpl;
 
 @RestController
-public class TopicController {   
+public class TopicController {
 
 	@Autowired
 	private TopicServiceImpl topicServiceImpl;
-	
-	This line is deliberately writen to create an error in the code
-	for checking if the email triggering is working in jenkins or not.
 	
 	@RequestMapping(method = RequestMethod.POST, value = "topics")
 	public void addTopic(@RequestBody Topic topic) {
